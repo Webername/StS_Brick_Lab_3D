@@ -23,22 +23,3 @@ document.querySelectorAll('.grant-logo img').forEach(img => {
   img.addEventListener('error', fallback);
   if (img.complete && img.naturalWidth === 0) fallback();
 });
-const briefForm = document.getElementById('brief-form');
-const briefStatus = document.getElementById('brief-status');
-briefForm?.addEventListener('submit', async event => {
-  event.preventDefault();
-  const topic = briefForm.querySelector('[name="type"]')?.value || 'Индивидуальный конструктор';
-  const idea = briefForm.querySelector('[name="idea"]')?.value.trim() || '';
-  if (!idea) { briefStatus.textContent = 'Опишите вашу идею, чтобы подготовить текст.'; return; }
-  const content = 'Заявка Brick Lab 3D\nТип: ' + topic + '\nОписание: ' + idea;
-  try {
-    if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-    await navigator.clipboard.writeText(content);
-    briefStatus.textContent = 'Описание скопировано. Теперь перейдите к форме заявки по ссылке ниже и вставьте текст.';
-  } catch (e) {
-    const textarea = briefForm.querySelector('textarea');
-    textarea.focus();
-    textarea.select();
-    briefStatus.textContent = 'Автокопирование недоступно. Скопируйте выбранный текст вручную (Ctrl+C), затем откройте форму по ссылке ниже.';
-  }
-});
