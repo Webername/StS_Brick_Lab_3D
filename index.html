@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf6">
+  <meta name="description" content="Brick Lab 3D — индивидуализированные конструкторы на заказ: 3D-моделирование, изготовление деталей, инструкция по сборке и оформление набора.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brick Lab 3D — конструкторы по вашей идее">
+  <meta property="og:description" content="От идеи до деталей, которые можно собрать. Создаём индивидуализированные конструкторы методом 3D-печати.">
+  <title>Brick Lab 3D — индивидуализированные конструкторы на заказ</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Перейти к содержимому</a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Brick Lab 3D — на главную">
+      <span class="brand-icon" aria-hidden="true"><svg width="43" height="43" viewBox="0 0 43 43"><rect width="43" height="43" rx="13" fill="#242925"/><path d="m11 13 10.5-6 10.5 6v13l-10.5 6L11 26V13Z" fill="none" stroke="#EFC877" stroke-width="2.1" stroke-linejoin="round"/><path d="m11.5 13.5 10 6 10-6m-10 6v12" stroke="#EFC877" stroke-width="2.1" fill="none"/><circle cx="32" cy="31.5" r="4.4" fill="#D88169"/></svg></span>
+      <span class="brand-title">BRICK LAB <b>3D</b><small>КОНСТРУКТОРЫ НА ЗАКАЗ</small></span>
+    </a>
+    <nav class="nav" id="navigation" aria-label="Основное меню">
+      <a href="#possibilities">Возможности</a>
+      <a href="#process">Как мы работаем</a>
+      <a href="#pricing">Стоимость</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="button button-dark header-cta" href="#request">Оставить заявку <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="grant-panel" aria-label="Информация о государственной поддержке проекта" id="support">
+      <a class="grant-logo grant-fund" href="https://fasie.ru/" target="_blank" rel="noopener noreferrer" aria-label="Фонд содействия инновациям — официальный сайт">
+        <img src="https://dtp.spbstu.ru/userfiles/files/partners/fs.jpg" alt="Логотип Фонда содействия инновациям" width="145" height="70" loading="eager">
+        <span class="logo-fallback">Фонд содействия<br>инновациям</span>
+      </a>
+      <div class="grant-copy">
+        <span class="grant-overline"><span class="dot" aria-hidden="true"></span> ПРОЕКТ РЕАЛИЗУЕТСЯ ПРИ ПОДДЕРЖКЕ</span>
+        <p>Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап» мероприятия «Платформа университетского технологического предпринимательства» федерального проекта «Технологии»</p>
+      </div>
+      <a class="grant-logo grant-platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer" aria-label="Платформа университетского технологического предпринимательства — официальный сайт">
+        <img src="https://univertechpred.ru/local/templates/mo/assets/img/master/main_project-logo.svg" alt="Логотип Платформы университетского технологического предпринимательства" width="170" height="72" loading="eager">
+        <span class="logo-fallback">Платформа университетского<br>технологического предпринимательства</span>
+      </a>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> СТУДИЯ ПЕРСОНАЛИЗИРОВАННОЙ 3D-ПЕЧАТИ</span>
+        <h1 id="hero-title">Ваша идея.<br><em>Ваш конструктор.</em><br>Наша 3D-печать.</h1>
+        <p class="lead">Превращаем ваши идеи в индивидуальные наборы для сборки: разрабатываем детали, печатаем, проверяем соединения и создаём наглядные инструкции.</p>
+        <div class="hero-actions">
+          <a class="button button-dark button-large" href="#request">Обсудить свой конструктор <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="#possibilities">Узнать больше <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="hero-note-icon" aria-hidden="true">✳</span><p>Не нужен готовый чертёж. Достаточно вашей идеи, эскиза или примера желаемого результата.</p></div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Стилизованная иллюстрация модульного конструктора с разноцветными деталями">
+        <div class="visual-backdrop"></div>
+        <div class="visual-circle visual-circle-a"></div><div class="visual-circle visual-circle-b"></div>
+        <svg class="hero-bricks" viewBox="0 0 600 550" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="f1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2D991"/><stop offset="1" stop-color="#E9BE62"/></linearGradient>
+            <linearGradient id="f2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DD987F"/><stop offset="1" stop-color="#CD735C"/></linearGradient>
+            <linearGradient id="f3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8C9B0"/><stop offset="1" stop-color="#79A992"/></linearGradient>
+          </defs>
+          <ellipse cx="302" cy="467" rx="211" ry="38" fill="#27302B" opacity=".11"/>
+          <g transform="translate(80 173)"><path d="M52 69 177 0l126 70-127 73Z" fill="#F4DB9B"/><path d="M52 69 176 143v127L52 194Z" fill="#E3B962"/><path d="M176 143 303 70v124l-127 76Z" fill="#D9A953"/><path d="M79 66 178 11l99 55-100 57Z" fill="url(#f1)"/><path d="M177 123v121" stroke="#CF9E46" stroke-width="3" opacity=".4"/><g fill="#F8E7BA" stroke="#E4C170" stroke-width="2"><ellipse cx="136" cy="45" rx="19" ry="10"/><ellipse cx="215" cy="47" rx="19" ry="10"/><ellipse cx="178" cy="75" rx="19" ry="10"/></g></g>
+          <g transform="translate(231 69)"><path d="M18 79 137 10l120 68-121 70Z" fill="#ECB09B"/><path d="M18 79 136 148v125L18 201Z" fill="#D27E66"/><path d="M136 148 257 78v123l-121 72Z" fill="#B9614B"/><path d="M54 79 138 30l84 48-86 48Z" fill="url(#f2)"/><g fill="#F0C0B0" stroke="#D78A73" stroke-width="2"><ellipse cx="100" cy="64" rx="18" ry="10"/><ellipse cx="174" cy="65" rx="18" ry="10"/></g></g>
+          <g transform="translate(300 260)"><path d="M14 59 97 11l84 47-84 49Z" fill="#B4D0BE"/><path d="M14 59 97 107v93L14 151Z" fill="#81AF96"/><path d="M97 107 181 58v93l-84 49Z" fill="#639A7C"/><path d="M37 59 98 24l60 35-61 35Z" fill="url(#f3)"/><g fill="#CEE0D2" stroke="#90B79F" stroke-width="2"><ellipse cx="98" cy="47" rx="16" ry="9"/></g></g>
+          <path d="m124 101 16-17m327 260 18-17M431 59l12-12" stroke="#D17F66" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="117" cy="100" r="6" fill="#E5C77B"/><circle cx="477" cy="327" r="7" fill="#E0AA91"/><circle cx="443" cy="47" r="6" fill="#A4C6B0"/>
+        </svg>
+        <div class="visual-badge badge-one"><span>01 / ИДЕЯ</span><strong>Уникальная конструкция</strong></div>
+        <div class="visual-badge badge-two"><span aria-hidden="true">✦</span> Деталь к детали</div>
+        <div class="visual-caption">Иллюстрация концепции модульного конструктора</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="feature-strip"><div class="container feature-strip-inner"><span><b>01</b> 3D-моделирование</span><span class="feature-sep" aria-hidden="true">✳</span><span><b>02</b> Печать и проверка деталей</span><span class="feature-sep" aria-hidden="true">✳</span><span><b>03</b> Инструкция и оформление</span></div></div>
+
+<section class="section possibilities-section" id="possibilities" aria-labelledby="possibilities-title">
+ <div class="container">
+  <div class="section-heading"><div><span class="section-kicker">ЧТО МОЖНО СОЗДАТЬ</span><h2 id="possibilities-title">Конструктор под <em>вашу задачу.</em></h2></div><p>Каждый проект начинается с запроса. Тематику, форму деталей, цвет и содержание набора подбираем индивидуально.</p></div>
+  <div class="possibility-grid">
+    <article class="possibility-card card-peach"><div class="card-art art-one" aria-hidden="true"><div class="mini-cube cube-a"></div><div class="mini-cube cube-b"></div><div class="mini-cube cube-c"></div></div><span class="card-num">НАПРАВЛЕНИЕ 01</span><h3>По вашей задумке</h3><p>Сувенирный, тематический или авторский набор с деталями и внешним видом, согласованными под вашу идею.</p><a href="#request">Обсудить идею <span aria-hidden="true">↗</span></a></article>
+    <article class="possibility-card card-lilac"><div class="card-art art-two" aria-hidden="true"><span class="puzzle-shape p1">✳</span><span class="puzzle-shape p2">✦</span><span class="puzzle-shape p3">◆</span></div><span class="card-num">НАПРАВЛЕНИЕ 02</span><h3>Для игры и обучения</h3><p>Набор для изучения форм, сборки конструкций и знакомства с принципами устройства окружающих предметов.</p><a href="#request">Обсудить набор <span aria-hidden="true">↗</span></a></article>
+    <article class="possibility-card card-mint"><div class="card-art art-three" aria-hidden="true"><div class="gear gear-one">⚙</div><div class="gear gear-two">⚙</div></div><span class="card-num">НАПРАВЛЕНИЕ 03</span><h3>С особой конструкцией</h3><p>Модели со сборными и сопрягаемыми деталями, в которых важно продумать геометрию и удобство соединений.</p><a href="#request">Предложить проект <span aria-hidden="true">↗</span></a></article>
+  </div>
+  <p class="catalog-note">Изображения на сайте являются иллюстрациями возможностей персонализации, а не фотографиями готовых коммерческих наборов.</p>
+ </div>
+</section>
+
+<section class="section value-section" id="approach" aria-labelledby="approach-title">
+ <div class="container value-grid">
+  <div class="value-panel"><div class="value-art"><div class="value-gridlines"></div><span class="value-card v1">МОДЕЛЬ <b>3D</b></span><span class="value-card v2">ДЕТАЛИ <b>✓</b></span><span class="value-card v3">СБОРКА <b>↗</b></span></div></div>
+  <div class="value-copy"><span class="section-kicker">НЕ ТОЛЬКО 3D-ПЕЧАТЬ</span><h2 id="approach-title">Продумываем не только вид, <em>но и сборку.</em></h2><p>Состав конструктора определяют на этапе 3D-моделирования. Затем проверяют, как детали подходят друг к другу, и при необходимости корректируют конструкцию.</p><div class="value-points"><div><span>01</span><div><strong>Индивидуальная 3D-модель</strong><small>Форма и состав под конкретную задачу</small></div></div><div><span>02</span><div><strong>Пробные детали и сборка</strong><small>Проверка сопряжений и качества печати</small></div></div><div><span>03</span><div><strong>Наглядная инструкция</strong><small>Понятная последовательность сборки</small></div></div></div><a class="button button-dark" href="#request">Расскажите о своей идее <span aria-hidden="true">↗</span></a></div>
+ </div>
+</section>
+
+<section class="section process-section" id="process" aria-labelledby="process-title">
+ <div class="container"><div class="section-heading"><div><span class="section-kicker">КАК МЫ РАБОТАЕМ</span><h2 id="process-title">От первой идеи <em>до конструктора.</em></h2></div><p>Прозрачная последовательность, чтобы было понятно, что происходит с вашим заказом на каждом шаге.</p></div>
+ <ol class="process-grid"><li><span class="process-num">01</span><span class="process-icon" aria-hidden="true">✎</span><h3>Обсуждаем</h3><p>Уточняем назначение, размеры, внешний вид и особенности будущего набора.</p></li><li><span class="process-num">02</span><span class="process-icon" aria-hidden="true">▧</span><h3>Моделируем</h3><p>Создаём цифровые 3D-модели и согласуем основные конструктивные решения.</p></li><li><span class="process-num">03</span><span class="process-icon" aria-hidden="true">✳</span><h3>Печатаем</h3><p>Изготавливаем детали, проверяем их сборку и при необходимости дорабатываем.</p></li><li><span class="process-num">04</span><span class="process-icon" aria-hidden="true">↗</span><h3>Комплектуем</h3><p>Подготавливаем инструкцию, согласуем упаковку и передачу готового набора.</p></li></ol></div>
+</section>
+
+<section class="section pricing-section" id="pricing" aria-labelledby="pricing-title"><div class="container pricing-grid"><div><span class="section-kicker">СТОИМОСТЬ</span><h2 id="pricing-title">Каждый набор <em>индивидуален.</em></h2><p>Цена зависит от сложности модели, количества и размеров деталей, материала, объёма печати и требований к оформлению.</p><a class="button button-light" href="#request">Получить расчёт <span aria-hidden="true">↗</span></a></div><div class="price-card"><span>ОРИЕНТИР ПО СТОИМОСТИ</span><div class="price-number"><small>от</small> 3 000 <small>₽</small></div><p>Окончательная стоимость определяется после обсуждения конкретного заказа. Указана стартовая ориентировочная цена, не публичная оферта.</p><div class="price-badge">По индивидуальному запросу</div></div></div></section>
+
+<section class="section request-section" id="request" aria-labelledby="request-title"><div class="container">
+  <div class="request-shell">
+    <div class="request-copy"><span class="request-kicker">НАЧНЁМ С ВАШЕЙ ИДЕИ</span><h2 id="request-title">Какой конструктор хотите <em>создать?</em></h2><p>Расскажите о задумке, а мы обсудим возможность изготовления, варианты конструкции и стоимость.</p><div class="request-list"><div><span>✓</span> Можно обратиться без готовой 3D-модели</div><div><span>✓</span> Важные детали уточняем до изготовления</div><div><span>✓</span> Стоимость согласовывается индивидуально</div></div><p class="request-small">Заявки сейчас принимаются через действующую страницу проекта на Битрикс24. Этот сайт не отправляет данные на сервер самостоятельно.</p></div>
+    <div class="request-panel">
+      <div class="request-panel-head"><span>ВАШ БРИФ</span><strong>Подготовьте описание заказа</strong></div>
+      <form id="brief-form"><label for="brief-type">Что вам нужно?</label><select id="brief-type" name="type"><option value="Индивидуальный конструктор">Индивидуальный конструктор</option><option value="Образовательный набор">Образовательный набор</option><option value="Тематический набор">Тематический набор</option><option value="Другая идея">Другая идея</option></select><label for="brief-idea">Расскажите о задумке</label><textarea id="brief-idea" name="idea" rows="5" placeholder="Например: набор для сборки макета здания с инструкцией" required></textarea><button class="button button-dark copy-button" type="submit">Скопировать описание <span aria-hidden="true">↗</span></button><div id="brief-status" class="brief-status" role="status" aria-live="polite"></div></form>
+      <div class="request-panel-bottom"><p>После копирования вставьте описание в форму заявки на действующем сайте проекта.</p><a class="external-link" href="https://bricklabs.bitrix24site.ru/#b781" target="_blank" rel="noopener noreferrer">Перейти к форме заявки <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </div>
+ </div></section>
+
+<section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="container faq-grid"><div><span class="section-kicker">ЧАСТЫЕ ВОПРОСЫ</span><h2 id="faq-title">Полезно знать <em>до заказа.</em></h2><p>Если остались вопросы, расскажите о них при обращении.</p><a href="#request" class="text-link">Подготовить заявку <span aria-hidden="true">↗</span></a></div><div class="faq-items">
+  <details><summary>Обязательно ли иметь готовую 3D-модель?<span aria-hidden="true">+</span></summary><p>Нет. Можно начать с описания идеи, рисунка или примера. Требования к будущему набору обсуждаются индивидуально.</p></details>
+  <details><summary>Можно ли выбрать цвет и форму деталей?<span aria-hidden="true">+</span></summary><p>Да, пожелания к оформлению можно обсудить при согласовании. Реализуемость конкретных изменений зависит от конструкции и доступных материалов.</p></details>
+  <details><summary>Будет ли инструкция по сборке?<span aria-hidden="true">+</span></summary><p>При разработке индивидуализированных конструкторов предусматривается подготовка графических материалов, помогающих выполнить сборку.</p></details>
+  <details><summary>Как рассчитывается стоимость?<span aria-hidden="true">+</span></summary><p>Расчёт зависит от особенностей заказа. Ориентир на сайте — от 3 000 ₽; окончательная цена определяется при согласовании характеристик.</p></details>
+  <details><summary>Как отправить заявку?<span aria-hidden="true">+</span></summary><p>Подготовьте описание в блоке выше и перейдите на действующую страницу проекта, где размещена форма приёма заявок.</p></details>
+</div></div></section>
+
+<section class="about-project"><div class="container about-inner"><div><span class="section-kicker">О ПРОЕКТЕ</span><h2>Brick Lab 3D</h2><p>Проект № 107645. Студия 3D-печати для разработки и изготовления индивидуализированных конструкторов. Развивается при поддержке Фонда содействия инновациям.</p></div><a href="#support">Информация о поддержке на первом экране <span aria-hidden="true">↑</span></a></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a href="#top" class="footer-logo">BRICK LAB <span>3D</span></a><p>Индивидуализированные конструкторы и 3D-печать</p><a href="#request">Оставить заявку ↗</a><span>Проект № 107645 · 2026</span></div></footer>
+</body></html>
